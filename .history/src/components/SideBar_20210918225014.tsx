@@ -20,6 +20,7 @@ export function SideBar({ genres, selectedGenreId, handleClickButton }: SideBarP
 
     <nav className="sidebar">
       <span>Watch<p>Me</p></span>
+      <p>dasdsada </p>
       <div className="buttons-container">
         {genres.map(genre => (
           <Button

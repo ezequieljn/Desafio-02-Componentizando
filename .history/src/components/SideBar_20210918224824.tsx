@@ -1,16 +1,10 @@
 import React, { } from 'react'
 import { Button } from './Button'
 
-interface GenreResponseProps {
-  id: number;
-  name: 'action' | 'comedy' | 'documentary' | 'drama' | 'horror' | 'family';
-  title: string;
-}
-
 interface SideBarProps {
-  genres: GenreResponseProps[];
-  selectedGenreId: number;
-  handleClickButton: (arg: number) => void;
+  genres,
+  selectedGenreId,
+  handleClickButton: (arg: number) => void
 }
 
 
@@ -20,6 +14,7 @@ export function SideBar({ genres, selectedGenreId, handleClickButton }: SideBarP
 
     <nav className="sidebar">
       <span>Watch<p>Me</p></span>
+
       <div className="buttons-container">
         {genres.map(genre => (
           <Button

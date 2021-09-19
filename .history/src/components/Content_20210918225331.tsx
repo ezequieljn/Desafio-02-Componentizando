@@ -25,6 +25,8 @@ interface ContentProps {
 
 
 export function Content({ selectedGenre, movies }: ContentProps) {
+
+
   return (
     <div className="container">
       <header>
@@ -39,5 +41,8 @@ export function Content({ selectedGenre, movies }: ContentProps) {
         </div>
       </main>
     </div>
+
+
   )
+
 }
